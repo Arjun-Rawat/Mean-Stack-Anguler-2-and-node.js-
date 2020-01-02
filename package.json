@@ -4,7 +4,8 @@
   "description": "Mean Stack with Angular 2",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js"
+    "start": "node index.js",
+    "build": "cd client && ng build --prod && cd.. && node index.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,12 @@
   },
   "homepage": "https://github.com/Arjun-Rawat/Mean-Stack-Anguler-2-and-node.js-#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "angular-jwt": "^0.1.11",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "ng-flash-messages": "^0.3.0"
   }
 }
