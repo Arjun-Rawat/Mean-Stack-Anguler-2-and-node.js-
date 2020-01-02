@@ -8,7 +8,7 @@
   const blogs=require('./routes/blogs')(router);
   const bodyParser = require('body-parser');
   const cors=require('cors');
-  const port = process.env.PORT ||8080;
+  const port = process.env.PORT||8080;
 
   //database connection
   mongoose.Promise=global.Promise;
